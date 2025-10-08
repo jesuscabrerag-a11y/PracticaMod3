@@ -48,6 +48,8 @@ def obtener_datos_usuario(username, password):
             print(f"Correo: {usuario[2]}")
             print(f"Teléfono: {usuario[3]}")
             print(f"Fecha de Nacimiento: {usuario[4]}")
+            cursor.close()
+            conn.close()
         else:
             print("\nUsuario o contraseña incorrectos.")
             cursor.close()
